@@ -42,12 +42,12 @@ foreach ($res as $row) {
 
 
         <div class="mb-3">
-            <label class="form-label text-dark" for="nom">Nom</label>
+            <label class="form-label text-dark" for="nom">Prenom</label>
             <input type="text" value="<?php echo $firstname;?>" class="form-control" name="firstname" id="nom" placeholder="Enter nom">
         </div>
 
         <div class="mb-3" >
-            <label for="nom" class="form-label text-dark">Prénom</label>
+            <label for="nom" class="form-label text-dark">Nom</label>
             <input type="text" value="<?php echo $lastname;?>" class="form-control" name="lastname" id="nom" placeholder="Enter nom">
         </div>
 
