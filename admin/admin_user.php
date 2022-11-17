@@ -17,10 +17,12 @@ if ($sql->rowCount() > 0) {
 ?>
    <div class="container mt-5">
     <h2>Ensemble des utilisateurs</h2>
-   <table border=1px class="table table-dark table-striped"> 
-   <tr>
+    <center class="my-5">
+    <a class="btn btn-success" href="../inscription.php"><p class="mb-0">Ajouter un utilisateur</p></a>
+    </center>
+   <table border=1px class="table table-hover"> 
+   <tr class='text-center bg-dark text-white'>
    <th>ID</th>
-   <th>nom utilisateur</th>
    <th>nom</th>
    <th>prenom</th>
    <th>email</th>
@@ -31,14 +33,13 @@ if ($sql->rowCount() > 0) {
 
    <?php
   foreach ($res as $row) {
-    echo "<tr class="."'text-white'>";
+    echo "<tr class='text-center'>";
     echo "<td>" . $row["id"] . "</td>";
-    echo "<td>" . $row["user_name"] . "</td>";
     echo "<td>" . $row["firstname"] . "</td>";
     echo "<td>" . $row["lastname"] . "</td>";
     echo "<td>" . $row["email"] . "</td>";
-    echo "<td><button class='btn btn-outline-secondary'><a class= 'text-white text-decoration-none' href='../controller/modifier.php?id=".$row['id']." &firstname=".$row['firstname']." &mail=".$row['email']."'> Modifier </a></button></td>";
-    echo "<td><button class='btn btn-outline-secondary'><a class= 'text-white text-decoration-none' href='../controller/supprimer.php?id=".$row['id']." &firstname=".$row['firstname']." &mail=".$row['email']."' >Supprimer</a></button</td>";
+    echo "<td><button class='btn btn-warning'><a class= 'text-white text-decoration-none' href='../controller/FormModifier.php?id=".$row['id']." &firstname=".$row['firstname']." &mail=".$row['email']."'> Modifier </a></button></td>";
+    echo "<td><button class='btn btn-danger'><a class= 'text-white text-decoration-none' href='../controller/supprimer.php?id=".$row['id']." &firstname=".$row['firstname']." &mail=".$row['email']."' >Supprimer</a></button</td>";
 }
 ?>
   </table>

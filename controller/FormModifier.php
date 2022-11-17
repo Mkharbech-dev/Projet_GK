@@ -10,7 +10,6 @@ include '../database.php';
 $id_Get = $_GET['id'];
 
 //echo $res;
-$user_name='';
 $nom="";
 $prenom = "";
 $email="";
@@ -23,7 +22,6 @@ $res = $sql->fetchAll();
 
 foreach ($res as $row) {
     $id= $row['id'];
-    $user_name = $row['user_name'];
     $firstname=$row["firstname"] ;
     $lastname=$row["lastname"] ;
     $email = $row["email"];
@@ -34,12 +32,6 @@ foreach ($res as $row) {
     
     <form action="miseAjour.php" method="post">
         <input type="hidden" name="id" value="<?php echo $id;?>"/>
-
-        <div class="mb-3">
-            <label for="nom" class="form-label text-dark">Nom d'utilisateur</label>
-            <input type="text" value="<?php echo $user_name;?>" class="form-control" name="user_name" id="nom" placeholder="Enter nom">
-        </div>
-
 
         <div class="mb-3">
             <label class="form-label text-dark" for="nom">Prenom</label>

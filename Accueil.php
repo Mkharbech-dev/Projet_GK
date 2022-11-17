@@ -14,7 +14,7 @@ session_start();
       <span class="navbar-toggler-icon"></span>
     </button>
       <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+        <div class="navbar-nav">
         <?php if(isset($_SESSION['auth'])) {
                 echo 'Bonjour :  <span style =" color : yellow;" class="mx-2"> '.$_SESSION['lastname'].' </span>';
                 echo '<a class = "text-decoration-none text-white" href="./controller/logout.php"><span class="dec">Déconnexion</span></a>';
@@ -24,10 +24,12 @@ session_start();
                 <a class="text-decoration-none nav-link text-white" href="Connexion.php">connexion</a>';     
             }
         ?>
-          </div>
+        </div>
       </div>
   </div>
 </nav>
+
+<h1 class="text-center">Bienvenue sur notre site!</h1>
 </div>
     
 </body>

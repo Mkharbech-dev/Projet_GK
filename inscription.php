@@ -9,10 +9,6 @@
         <!-- afficher le message d'erreur  -->
         <?php if(isset($errorMsg)) { echo '<p class="alert alert-danger" role="alert">' .$errorMsg. '</p>';}?>
         <?php if(isset($successMessage)) { echo '<p class="alert alert-success" role="alert">' .$successMessage. '</p>';}?>
-    <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nom d'utilisateur</label>
-            <input type="text"  class="form-control" name="user_name">
-        </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nom</label>
             <input type="text" class="form-control" name="lastname"> 
@@ -23,7 +19,7 @@
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" name="email"> 
+            <input type="email" class="form-control" name="login"> 
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
