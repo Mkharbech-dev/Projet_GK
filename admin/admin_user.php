@@ -9,12 +9,14 @@ include '../database.php';
 
 
 <?php
+if(!empty($_SESSION['role'])){
 $sql = $bdd->prepare( 'SELECT * FROM users');
 $sql->execute();
 $res = $sql->fetchAll();
 
 if ($sql->rowCount() > 0) { 
 ?>
+    <?php include '../inc/nav.php' ?>
    <div class="container mt-5">
     <h2>Ensemble des utilisateurs</h2>
     <center class="my-5">
@@ -48,6 +50,10 @@ if ($sql->rowCount() > 0) {
 <?php
 } else {
   echo "<div class='text-center alert alert-secondary'> il n y\'a aucun utilisateur dans la BDD </div>";
+}
+}else if(empty($_SESSION['role'])){
+  // Redirection vers le fichier index php en cas de connexion (Page d'accueil)
+  header('Location: ../connexion.php');
 }
 ?>
 </body>
