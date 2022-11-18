@@ -17,12 +17,12 @@ $sql->execute();
 $res = $sql->fetchAll();
 ?>
 
-<div class="container marketing my-5 ">
-<div class="d-flex">
+<div class="container-fluid marketing my-5 row">
+<div class="row">
 <?php
 if ($sql->rowCount() > 0) {
 foreach($res as $row) { ?>
-        <div class="text-center col-4">
+        <div class="text-center col-lg-4 col-sm-12 col-md-6">
         <img src="<?php echo  $row["image"]?>" with="200px" height="200px" alt="image">
         <h5 class="fw-normal"><?php $row['libelle'] ?></h5>
         <p><?php echo $row["description"] ?></p>
@@ -41,4 +41,8 @@ foreach($res as $row) { ?>
 ?>
 
 </body>
+<?php
+include './inc/javascript.php';
+?>
+
 </html>

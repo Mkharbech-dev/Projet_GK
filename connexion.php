@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include './inc/head.php' ?>
+<?php include './inc/nav.php'?>
 <body>
+<div class="container" style="height: 100vh;">
 <h1 class="text-center mt-5">Connexion</h1>
     <br><br>
     <form class="container" method = "POST">
@@ -19,5 +21,13 @@
         <button type="submit" class="btn btn-primary mb-5" name="validate">Se connecter</button>
         <a href="inscription.php"><p>Je n'ai pas un compte, je m'inscris</p></a>
     </form>
+
+</div>
+<?php
+include './inc/footer.php';
+?>
 </body>
+<?php
+include './inc/javascript.php';
+?>
 </html>

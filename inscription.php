@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include './inc/head.php' ?>
+<?php include './inc/nav.php'?>
 <body>
     <h1 class="text-center mt-5">Inscription</h1>
     <br><br>
