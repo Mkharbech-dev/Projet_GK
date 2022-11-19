@@ -1,15 +1,11 @@
-
+<?php include '../database.php'?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include './inc/head.php' ?>
+<?php include '../inc/head.php' ?>
 <body>
 
 <div class="">
-<?php
-include './inc/nav.php';
-require_once ('database.php');
-?>
-
+<?php include '../inc/nav.php'?>
 </div>
 <?php
 $sql = $bdd->prepare( 'SELECT * FROM produit');
@@ -42,7 +38,7 @@ foreach($res as $row) { ?>
 
 </body>
 <?php
-include './inc/javascript.php';
+include '../inc/javascript.php';
 ?>
 
 </html>

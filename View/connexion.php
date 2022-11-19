@@ -1,8 +1,8 @@
-<?php require './controller/connexion_controller.php' ?>
+<?php require '../controller/connexion_controller.php' ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include './inc/head.php' ?>
-<?php include './inc/nav.php'?>
+<?php include '../inc/head.php' ?>
+<?php include '../inc/nav.php'?>
 <body>
 <div class="container" style="height: 100vh;">
 <h1 class="text-center mt-5">Connexion</h1>
@@ -24,10 +24,10 @@
 
 </div>
 <?php
-include './inc/footer.php';
+include '../inc/footer.php';
 ?>
 </body>
 <?php
-include './inc/javascript.php';
+include '../inc/javascript.php';
 ?>
 </html>

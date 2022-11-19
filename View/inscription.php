@@ -1,8 +1,8 @@
-<?php require './controller/inscription_controller.php' ?>
+<?php require '../controller/inscription_controller.php' ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include './inc/head.php' ?>
-<?php include './inc/nav.php'?>
+<?php include '../inc/head.php' ?>
+<?php include '../inc/nav.php'?>
 <body>
     <h1 class="text-center mt-5">Inscription</h1>
     <br><br>
@@ -33,5 +33,5 @@
 </body>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-<script src="./js/app.js"></script>
+<script src="../js/app.js"></script>
 </html>

@@ -20,7 +20,7 @@ if(isset($_POST['validate'])){
             $getInfosThisUserReq->execute(array($user_firstname, $user_lastname,  $user_email, 'role_client',$dateInscription));
             // Récuperer les infos de user et les stocker dans cette variable $usersInfos.
             $usersInfos = $getInfosThisUserReq->fetchAll();
-            $successMessage = 'Enregistré avec succès, <a href= "connexion.php"> connectez‐vous </a> !';  
+            $successMessage = 'Enregistré avec succès, <a href= "../admin/admin_user.php"> aller à dashboard </a> !';  
         }else{
             $errorMsg = "email  existe déja!";
         }

@@ -2,4 +2,4 @@
 session_start();
 $_SESSION = [];
 session_destroy();
-header('Location: ../Accueil.php');
+header('Location: ../View/Accueil.php');

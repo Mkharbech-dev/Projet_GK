@@ -1,6 +1,6 @@
 <?php
 //connexion
-include './database.php';
+include '../database.php';
 
 // Validation du formulaire.
 if(isset($_POST['validate'])){
@@ -21,12 +21,12 @@ if(isset($_POST['validate'])){
                     $_SESSION['role'] = $user_infos['role'];
                     
                     if($user_infos['role']=='role_client'){
-                    header('Location: Accueil.php');
+                        // Redirection vers la page d'accueil
+                    header('Location: ../View/Accueil.php');
                     }else if($user_infos['role']=='role_admin'){
-                        // Redirection vers le fichier index php en cas de connexion (Page d'accueil)
-                        header('Location: ./admin/admin_user.php');  
+                    // Redirection vers le fichier admin_user.php en cas de connexion (Page admin)
+                    header('Location: ../admin/admin_user.php');  
                     };
-
                 }else{
                     $errorMsg = "Votre mot de passe est incorrect...!";}
         }else{
