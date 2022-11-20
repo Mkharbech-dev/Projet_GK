@@ -27,6 +27,7 @@ foreach($res as $row) { ?>
         </div> 
     <?php
 }
+
 ?>
 </div>
 </div>
